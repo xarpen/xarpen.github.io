@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xarpen | programmer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<script src="elements/contact-info.js"></script>
+<script src="elements/exp-content.js"></script>
+<script src="elements/icon-content.js"></script>
+<script src="elements/project-showcase.js"></script>
+<script src="scripts/aos.js"></script>
+<script>
+    AOS.init({
+        delay: 0,
+        duration: 500,
+        easing: "ease-in-cubic",
+        once: true
+    });
+</script>
+
+<nav class="nav navbar navbar-expand navbar-dark py-0" style="background-color: black">
+    <div class="container-fluid" style="padding-left:20%">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <contact-info image="mail" href="mailto:xarpen.com.cnrbz@passinbox.com" text="xarpen.com.cnrbz@passinbox.com"/>
+            </li>
+            <li class="nav-item">
+                <contact-info image="linkedin" href="https://www.linkedin.com/in/ivankharitonovich" text="ivankharitonovich"/>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="video-background-holder">
+    <video autoplay muted loop>
+        <source src="assets/video/Hands.mp4" type="video/mp4">
+    </video>
+    <div class="video-background-content container h-100">
+        <div class="row align-items-center justify-content-center h-100">
+            <div class="col text-center">
+                <h1 class="text-white">Ivan Kharitonovich</h1>
+                <h3 class="text-white py-1">Tech Lead</h3>
+                <a href="#resume" class="btn border border-2 rounded-1 hvr-bounce-to-right hvr-grow btn-resume">Resume</a>
+                <a href="#aboutme" class="btn border border-2 rounded-1 hvr-bounce-to-right hvr-grow btn-resume">About Me</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<div id="resume" class="container text-center d-none d-lg-block" data-aos="fade-up">
+    <div class="row">
+        <exp-content image="Unity3D" title="Unity 3D" years="14"/>
+        <exp-content image="Visual-Studio" title="C; C++; C#" years="12"/>
+        <exp-content image="CryEngine" title="CryEngine" years="2"/>
+    </div>
+</div>
+
+<div data-aos="fade-up">
+    <icon-content image="tools" title="Technologies">
+        <p>Unity3D, CryEngine, Rider, Visual Studio, XCode, DirectX, OpenGL, Metal, PhysX, Git, Subversion, Azure Pipelines</p>
+    </icon-content>
+</div>
+
+<div data-aos="fade-up">
+    <icon-content image="home-office" title="Platforms">
+        <p>Windows, OS X, Linux, Xbox One, PS4, iOS, Android</p>
+    </icon-content>
+</div>
+
+<div data-aos="fade-up">
+    <icon-content image="idea" title="Concepts">
+        <p>OOP, UML, CI/CD, TTD, Design Patterns, Refactoring, Network, Threading, Obfuscation</p>
+    </icon-content>
+</div>
+
+<div data-aos="fade-up">
+    <icon-content image="code" title="Languages" >
+        <p>C, C++, C#, Objective C, Assembler, HLSL, GLSL, CG</p>
+        <a class="hvr-grow-shadow p-1" href="assets/certs/Ivan%20Kharitonovich%20-%20Certificate%20Brainbench%20C++.pdf" type="pdf">
+            <img src="assets/certs/cppprogrammer.gif" alt="Brainbench Master C++" loading="lazy">
+        </a>
+        <a class="hvr-grow-shadow" href="assets/certs/Ivan%20Kharitonovich%20-%20Certificate%20Brainbench%20C%23.pdf" type="pdf">
+            <img src="assets/certs/csharp.gif" alt="Brainbench Master C#" loading="lazy">
+        </a>
+    </icon-content>
+</div>
+
+<div data-aos="fade-up">
+    <icon-content image="education" title="Education" >
+        <p>ITMO University, Saint Petersburg, Russia<br>2014 Bachelor of Engineering and Technology</p>
+    </icon-content>
+</div>
+
+<div data-aos="fade-up">
+    <icon-content image="verified-badge" title="Experience" >
+        <p>
+            <u><strong class="text-secondary">Present</strong> Tech Lead at Trackman</u><br>
+            <strong class="text-secondary">2017</strong> Senior Programmer at Trackman<br>
+            <strong class="text-secondary">2012</strong> Lead Programmer at Perfect Parallel - Perfect Golf<br>
+            <strong class="text-secondary">2010</strong> Lead Programmer at Absolutsoft - Contract Wars<br>
+            <strong class="text-secondary">2010</strong> Graphics Programmer at Absolutsoft - Russia 2028<br>
+            <strong class="text-secondary">*</strong><br>
+            <strong class="text-secondary">2015</strong> Graphics Programmer at Endnight Games - The Forest<br>
+            <strong class="text-secondary">2014</strong> Demoscene Programmer at Step Revolution - ReRave Plus
+        </p>
+    </icon-content>
+</div>
+
+<project-showcase
+        background-image="Russia-2028-Background"
+        overlay-color="rgba(0,0,0,0.25)"
+        date="2010"
+        sub-title="The Premier CryEngine Demonstration of the Year"
+        title="Russia 2028"
+        role="Graphics Programmer"
+        description="Enhanced CryEngine Capabilities through the Integration of Advanced Shading Techniques: Incorporated Parallax Decals, Normal Ambient Light (NAL), and meticulously re-engineered the lighting and shadow mapping systems. Additionally, refined the particle system and augmented post-processing effects for superior visual fidelity.
+                    <br><br>In the course of developing this project, a paramount challenge was the accurate visualization of the game's meticulously designed atmosphere. To surmount this, I engaged in a close collaboration with the art director, focusing on elevating the lighting system. This collaborative effort led to the conceptualization and implementation of a novel shading technique, the Normal Ambient Light (NAL) system, which proved to be exceptionally effective for rendering outdoor scenes.
+                    <br><br>Given the game's reliance on a dark, highly desaturated color palette, we dedicated substantial effort to refining shadow details. I lead major enhancements in Shadow Cascades and Point Light Shadows, achieving seamless integration with the game's environment. A pivotal advancement was the optimization of the Screen Space Ambient Occlusion filtering algorithm, significantly enhancing environmental realism.
+                    <br><br>One of the project's crowning achievements was the development of Parallax Decals. This innovation was crucial for depicting highly realistic post-apocalyptic interiors, featuring volumetric dust, crumbling plaster, and rubble. Parts of this technology were also adeptly applied to simulate volumetric dirt on windows, further pushing the boundaries of realism."
+        video-preview="Russia-2028-A"
+        video-min-height="13.1vw"
+        video-src="Russia2028"
+        image-b="Russia-2028-B"
+        image-c="Russia-2028-C">
+</project-showcase>
+
+<project-showcase
+        background-image="Contract-Wars-Background"
+        overlay-color="rgba(0,0,0,0.75)"
+        date="2010-2012"
+        sub-title="10M Total Users | 5K DAU"
+        title="Contract Wars"
+        role="Lead Programmer"
+        description="I lead the development of a modern FPS from the ground up, covering all key aspects including engine architecture, game logic, network capabilities, multiplayer integration, shaders, and tools. Initially, I undertook this code base solo, dedicating extensive effort to researching and implementing cutting-edge standards to craft a robust game architecture, logic, network, multiplayer functionality, and advanced ballistics systems.
+                    <br><br>Over a year and a half into development, the project boasted over 2 million subscribers and consistently maintained about 1,000 active players online. This success can be attributed to the meticulously planned design and architecture, and the synergy of a highly dedicated team. As the team expanded to include specialized programmers for database management, UI, and game mechanics, I guided them towards achieving remarkable outcomes under my leadership.
+                    <br><br>The engine's superior code quality allows it to operate efficiently across a broad spectrum of personal computers, with all systems optimized to perform only the necessary workload. My innovative approach in rendering decals, animating models, and managing bullet physics supported gameplay involving up to 30 players simultaneously on the same screen without performance drops.
+                    <br><br>Employing a robust authoritative server along with sophisticated client-side prediction techniques, I successfully eliminated network lag, ensuring smooth gameplay experiences even under conditions of high latency and packet loss."
+        video-src="ContractWars"
+        video-preview="Contract-Wars-A"
+        video-min-height="12vw"
+        image-b="Contract-Wars-B"
+        image-c="Contract-Wars-C">
+</project-showcase>
+
+<project-showcase
+        background-image="Perfect-Golf-Background"
+        overlay-color="rgba(0,0,0,0.75)"
+        date="2012-2017"
+        sub-title="The most realistic golf simulation experience"
+        title="Perfect Golf"
+        role="Lead Programmer"
+        description="As the lead developer for a state-of-the-art golf simulation game, my initial task was to enhance the game editor. Leveraging my expertise, I transformed this tool into a powerful asset now widely used by professional golf course designers. This achievement led to my promotion to lead the development of the entire game.
+                    <br><br>I was responsible for creating all the essential systems of the game, including the game engine, logic, network, multiplayer, user interface, and tools. My focus on writing clean and efficient code allowed us to develop a comprehensive golf game in just six months. I designed the engine to be highly compatible, running smoothly on major platforms such as PC, Mac, and Linux, and later adapted it for iOS and Android with few adjustments.
+                    <br><br>As the game progressed, I managed a growing team of programmers. Together, we developed sophisticated systems, including backend architecture, social integration, realistic golf physics, and improved user interfaces. We also continually added more features and logic to the game, enhancing the overall player experience.
+                    <br><br>This collaborative effort led to the game's successful debut on Steam Early Access, and full release after it. In this role, I not only handled technical development but also led the team, guiding the project through each stage of innovation and execution."
+        video-src="PerfectGolf"
+        video-preview="Perfect-Golf-A"
+        video-min-height="12vw"
+        image-b="Perfect-Golf-B"
+        image-c="Perfect-Golf-C">
+</project-showcase>
+
+<div id="aboutme" style="background-image:
+linear-gradient(to bottom, rgba(255,255,255,0) 0%,
+                           rgba(255,255,255,0.2) 15%,
+                           rgba(255,255,255,0.5) 25%,
+                           rgba(255,255,255,0.8) 35%,
+                           rgba(255,255,255,1) 70%) , url('assets/backgrounds/NewYork.jpg'); background-repeat: no-repeat; background-size: cover">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div data-aos="fade-right">
+        <icon-content image="avatar" title="Ivan Kharitonovich">
+            <h5 style="color:darkgoldenrod">Tech Lead</h5>
+            <p style="color: black">As a Tech Lead with over a decade of experience in video game engineering, I specialize in engine architecture, advanced computer graphics, and large-scale network. My robust expertise spans multiple technologies, including Unity3D and CryEngine, and programming languages such as C, C++, and C#. Proficient across various platforms like Windows, OS X, Linux, Xbox One, PS4, iOS, and Android, I leverage my strong mathematical background and deep understanding of computer graphics and network to deliver high-quality products swiftly and effectively. My contributions to the field are reflected in the widespread global use of the games and software I have developed, showcasing my ability to handle complex projects and produce industry-leading results.</p>
+        </icon-content>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+
+<div class="video-background-holder" style="height: calc(52vw)">
+    <video autoplay muted loop>
+        <source src="assets/video/Demoscene.mp4" type="video/mp4">
+    </video>
+    <div class="p-5">
+        <div class="video-background-content container p-3" style="background-color: rgba(0,0,0,0.75)">
+            <p style="color: deepskyblue;">2014</p>
+            <h5 style="color: darkgoldenrod">20 beautiful motion backgrounds</h5>
+            <h4 class="text-white">ReRave Plus - Graphics Programmer</h4>
+            <p class="text-white">In my role as a Graphics Programmer, I have developed and refined a series of procedural 'demoscene' shaders and post effects. These creations are designed to generate visually captivating effects and animations in real-time, leveraging advanced graphics programming techniques. My work in this area emphasizes both aesthetic appeal and technical efficiency, ensuring optimal performance across various platforms within the Unity3D environment.</p>
+            <div class="container">
+                <div class="row">
+                    <a class="hvr-grow-shadow p-3 col-4" href="assets/backgrounds/Demoscene-A.jpg" target="_blank">
+                        <img src="assets/backgrounds/Demoscene-A.jpg" style="max-width: 20vw" alt="" loading="lazy"/>
+                    </a>
+                    <a class="hvr-grow-shadow p-3 col-4" href="assets/backgrounds/Demoscene-B.jpg" target="_blank">
+                        <img src="assets/backgrounds/Demoscene-B.jpg" style="max-width: 20vw" alt="" loading="lazy"/>
+                    </a>
+                    <a class="hvr-grow-shadow p-3 col-4" href="assets/backgrounds/Demoscene-C.jpg" target="_blank">
+                        <img src="assets/backgrounds/Demoscene-C.jpg" style="max-width: 20vw" alt="" loading="lazy"/>
+                    </a>
+                </div>
+            </div>
+
+            <p style="color: deepskyblue;">2015</p>
+            <h5 style="color: darkgoldenrod">realistic water simulation</h5>
+            <h4 class="text-white">The Forest - Graphics Programmer</h4>
+            <p class="text-white">In my capacity as a Graphics Programmer, I specialized in the development of water shaders, focusing on creating realistic water simulations for various environments. My contributions involved crafting shaders that mimic the dynamic properties of water, including reflection, refraction, and fluid dynamics. This work was critical in enhancing the visual realism and interactive qualities of water surfaces in digital environments, demanding a precise blend of technical expertise and creative vision within the Unity3D framework.</p>
+            <div class="container">
+                <div class="row">
+                    <a class="hvr-grow-shadow p-3 col-4" href="assets/backgrounds/The-Forest-A.jpg" target="_blank">
+                        <img src="assets/backgrounds/The-Forest-A.jpg" style="max-width: 20vw" alt="" loading="lazy"/>
+                    </a>
+                    <a class="hvr-grow-shadow p-3 col-4" href="assets/backgrounds/The-Forest-B.jpg" target="_blank">
+                        <img src="assets/backgrounds/The-Forest-B.jpg" style="max-width: 20vw" alt="" loading="lazy"/>
+                    </a>
+                    <a class="hvr-grow-shadow p-3 col-4" href="assets/backgrounds/The-Forest-C.jpg" target="_blank">
+                        <img src="assets/backgrounds/The-Forest-C.jpg" style="max-width: 20vw" alt="" loading="lazy"/>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
