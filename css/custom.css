@@ -25,6 +25,12 @@ body {
     padding-left: 20%;
 }
 
+@media (max-width: 991.98px) {
+    .top-contact-nav .container-fluid {
+        padding-left: 1rem;
+    }
+}
+
 .section-spacer-xl {
     margin-bottom: 5rem !important;
 }
@@ -44,6 +50,17 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Outfit", "Segoe UI", system-ui, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Custom elements need explicit display styling to work with Bootstrap grid */
+contact-info, exp-content, icon-content, project-showcase {
+    display: block;
+}
+
+/* Ensure exp-content participates in row layouts as an actual column */
+exp-content {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .btn-resume {
@@ -82,6 +99,10 @@ h1, h2, h3, h4, h5, h6 {
 .video-background-holder {
     position: relative;
     background-color: black;
+    background-image: url('../assets/backgrounds/NewYork.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: calc(70vh);
     width: 100%;
     overflow: hidden;

@@ -6,22 +6,22 @@ class ProjectShowcase extends HTMLElement {
         const descriptionSlot = this.querySelector('[slot="description"]');
         const backgroundsPrefix = paths.backgroundsPrefix || 'assets/backgrounds/';
         const videosPrefix = paths.videosPrefix || 'assets/video/';
-        const backgroundImage = this.getAttribute('background-image') || '';
-        const backgroundExt = this.getAttribute('background-ext') || 'jpg';
-        const overlayColor = this.getAttribute('overlay-color') || 'rgba(0,0,0,0.25)';
-        const date = this.getAttribute('date') || '';
-        const subTitle = subtitleSlot ? subtitleSlot.innerHTML.trim() : (this.getAttribute('sub-title') || '');
-        const title = this.getAttribute('project-title') || this.getAttribute('title') || 'Project';
-        const role = this.getAttribute('role') || '';
-        const description = descriptionSlot ? descriptionSlot.innerHTML.trim() : (this.getAttribute('description') || '');
-        const videoPreview = this.getAttribute('video-preview') || '';
-        const videoPreviewExt = this.getAttribute('video-preview-ext') || 'jpg';
-        const videoMinHeight = this.getAttribute('video-min-height') || '12vw';
-        const videoSrc = this.getAttribute('video-src') || '';
-        const imageB = this.getAttribute('image-b') || '';
-        const imageBExt = this.getAttribute('image-b-ext') || 'jpg';
-        const imageC = this.getAttribute('image-c') || '';
-        const imageCExt = this.getAttribute('image-c-ext') || 'jpg';
+        const backgroundImage = String(this.getAttribute('background-image') || '').trim();
+        const backgroundExt = String(this.getAttribute('background-ext') || 'jpg').trim();
+        const overlayColor = String(this.getAttribute('overlay-color') || 'rgba(0,0,0,0.25)').trim();
+        const date = String(this.getAttribute('date') || '').trim();
+        const subTitle = subtitleSlot ? String(subtitleSlot.innerHTML || '').trim() : String(this.getAttribute('sub-title') || '').trim();
+        const title = String(this.getAttribute('project-title') || this.getAttribute('title') || 'Project').trim();
+        const role = String(this.getAttribute('role') || '').trim();
+        const description = descriptionSlot ? String(descriptionSlot.innerHTML || '').trim() : String(this.getAttribute('description') || '').trim();
+        const videoPreview = String(this.getAttribute('video-preview') || '').trim();
+        const videoPreviewExt = String(this.getAttribute('video-preview-ext') || 'jpg').trim();
+        const videoMinHeight = String(this.getAttribute('video-min-height') || '12vw').trim();
+        const videoSrc = String(this.getAttribute('video-src') || '').trim();
+        const imageB = String(this.getAttribute('image-b') || '').trim();
+        const imageBExt = String(this.getAttribute('image-b-ext') || 'jpg').trim();
+        const imageC = String(this.getAttribute('image-c') || '').trim();
+        const imageCExt = String(this.getAttribute('image-c-ext') || 'jpg').trim();
 
         this.innerHTML = `
             <div class="p-4" style="background-image: url('${backgroundsPrefix}${backgroundImage}.${backgroundExt}'); background-repeat: no-repeat; background-size: cover;">
@@ -45,10 +45,10 @@ class ProjectShowcase extends HTMLElement {
                                     <div class="video-thumbnail-play"></div>
                                 </div>
                                 <a class="project-showcase-media-item hvr-grow-shadow" href="${backgroundsPrefix}${imageB}.${imageBExt}" target="_blank">
-                                    <img class="project-showcase-media-image" src="${backgroundsPrefix}${imageB}.${imageBExt}" alt="${title} gameplay screenshot, secondary view" loading="lazy"/>
+                                    <img class="project-showcase-media-image" src="${backgroundsPrefix}${imageB}.${imageBExt}" alt="${title} gameplay screenshot, secondary view" loading="lazy" decoding="async" width="800" height="450"/>
                                 </a>
                                 <a class="project-showcase-media-item hvr-grow-shadow" href="${backgroundsPrefix}${imageC}.${imageCExt}" target="_blank">
-                                    <img class="project-showcase-media-image" src="${backgroundsPrefix}${imageC}.${imageCExt}" alt="${title} gameplay screenshot, tertiary view" loading="lazy"/>
+                                    <img class="project-showcase-media-image" src="${backgroundsPrefix}${imageC}.${imageCExt}" alt="${title} gameplay screenshot, tertiary view" loading="lazy" decoding="async" width="800" height="450"/>
                                 </a>
                             </div>
                         </div>

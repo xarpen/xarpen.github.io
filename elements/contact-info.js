@@ -2,9 +2,9 @@ class ContactInfo extends HTMLElement {
     connectedCallback() {
         const config = window.siteConfig || {};
         const paths = config.paths || {};
-        const image = this.getAttribute('image') || '';
-        const href = this.getAttribute('href') || '#';
-        const text = this.getAttribute('text') || '';
+        const image = String(this.getAttribute('image') || '').trim();
+        const href = String(this.getAttribute('href') || '#').trim();
+        const text = String(this.getAttribute('text') || '').trim();
         const icon24Prefix = paths.icons24Prefix || 'assets/icons/icons8-';
         const iconAlt = (image || 'contact') + ' icon';
 
