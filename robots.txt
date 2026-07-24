@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xarpen.github.io/sitemap.xml
+
