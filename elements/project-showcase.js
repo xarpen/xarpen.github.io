@@ -16,7 +16,6 @@ class ProjectShowcase extends HTMLElement {
         const description = descriptionSlot ? String(descriptionSlot.innerHTML || '').trim() : String(this.getAttribute('description') || '').trim();
         const videoPreview = String(this.getAttribute('video-preview') || '').trim();
         const videoPreviewExt = String(this.getAttribute('video-preview-ext') || 'jpg').trim();
-        const videoMinHeight = String(this.getAttribute('video-min-height') || '12vw').trim();
         const videoSrc = String(this.getAttribute('video-src') || '').trim();
         const imageB = String(this.getAttribute('image-b') || '').trim();
         const imageBExt = String(this.getAttribute('image-b-ext') || 'jpg').trim();
@@ -41,7 +40,7 @@ class ProjectShowcase extends HTMLElement {
                                 <div class="video-thumbnail project-showcase-media-item hvr-grow-shadow"
                                      data-video-src="${videosPrefix}${videoSrc}.mp4"
                                      aria-label="${title} gameplay video preview"
-                                     style="width: 100%; min-height: ${videoMinHeight}; background-image: url('${backgroundsPrefix}${videoPreview}.${videoPreviewExt}'); background-repeat: no-repeat; background-size: cover; background-origin: content-box; background-clip: content-box;">
+                                     style="width: 100%; aspect-ratio: 16 / 9; background-image: url('${backgroundsPrefix}${videoPreview}.${videoPreviewExt}'); background-repeat: no-repeat; background-size: cover; background-origin: content-box; background-clip: content-box;">
                                     <div class="video-thumbnail-play"></div>
                                 </div>
                                 <a class="project-showcase-media-item hvr-grow-shadow" href="${backgroundsPrefix}${imageB}.${imageBExt}" target="_blank">

@@ -9,16 +9,10 @@ class ContactInfo extends HTMLElement {
         const iconAlt = (image || 'contact') + ' icon';
 
         this.innerHTML = `
-            <table>
-                <tr>
-                    <td>
-                        <img src="${icon24Prefix}${image}-24.png" alt="${iconAlt}" loading="lazy">
-                    </td>
-                    <td>
-                        <a class="nav-link text-light hvr-curl-top-left" style="font-size: 0.9em; font-weight: bold" href="${href}">${text}</a>
-                    </td>
-                </tr>
-            </table>
+            <a class="top-contact-link nav-link text-light hvr-curl-top-left" href="${href}">
+                <img class="top-contact-icon" src="${icon24Prefix}${image}-24.png" alt="${iconAlt}" loading="lazy" width="24" height="24">
+                <span class="top-contact-text">${text}</span>
+            </a>
         `;
     }
 }

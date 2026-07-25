@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>xarpen | programmer</title>
+    <!-- Accessibility: Skip to main content link -->
+    <style>
+        .skip-to-main {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--ui-gold, #ffd271);
+            color: #000;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-to-main:focus {
+            top: 0;
+        }
+    </style>
+    <title>Ivan Kharitonovich | Principal Engineer - Game Architecture, Graphics & Multiplayer</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Ivan Kharitonovich Portfolio">
-    <meta name="keywords" content="xarpen, Ivan Kharitonovich, resume, portfolio">
+    <meta name="description" content="Principal Engineer with 15+ years shipping games to 48M+ players. Expert in game engine architecture, graphics, multiplayer systems, and cross-platform development across Unity, Unreal, and CryEngine.">
+    <meta name="keywords" content="Ivan Kharitonovich, Principal Engineer, game engine architecture, graphics programming, multiplayer systems, C++, C#, game development">
     <meta name="author" content="Ivan Kharitonovich">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://xarpen.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="xarpen">
-    <meta property="og:title" content="Ivan Kharitonovich | Principal Engineer">
-    <meta property="og:description" content="Principal Engineer with 15+ years in game engine architecture, graphics, multiplayer, and cross-platform delivery.">
+    <meta property="og:title" content="Ivan Kharitonovich | Principal Engineer - Game Architecture & Graphics">
+    <meta property="og:description" content="Principal Engineer with 15+ years in game engine architecture, graphics, multiplayer, and cross-platform delivery. Shipped 48M+ player games worldwide.">
     <meta property="og:url" content="https://xarpen.github.io/">
     <meta property="og:image" content="https://xarpen.github.io/assets/backgrounds/NewYork.jpg">
-    <meta property="og:image:alt" content="Ivan Kharitonovich portfolio background skyline image">
+    <meta property="og:image:alt" content="Ivan Kharitonovich portfolio background">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ivan Kharitonovich | Principal Engineer">
-    <meta name="twitter:description" content="Principal Engineer with 15+ years in game engine architecture, graphics, multiplayer, and cross-platform delivery.">
+    <meta name="twitter:description" content="Game engine architect and graphics programmer. 15+ years, 48M+ players, shipped across Unity, Unreal, CryEngine.">
     <meta name="twitter:image" content="https://xarpen.github.io/assets/backgrounds/NewYork.jpg">
     <link rel="preload" href="assets/fonts/Outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="sitemap" type="application/xml" href="https://xarpen.github.io/sitemap.xml">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="icon" type="image/x-icon" href="assets/icons/icons8-Icosahedron-64.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -28,25 +49,136 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://xarpen.github.io/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Resume",
+                    "item": "https://xarpen.github.io/#resume"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "About Me",
+                    "item": "https://xarpen.github.io/#aboutme"
+                }
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
             "@type": "Person",
             "name": "Ivan Kharitonovich",
             "url": "https://xarpen.github.io",
+            "image": "https://xarpen.github.io/assets/icons/icons8-avatar-64.png",
             "jobTitle": "Principal Engineer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Trackman"
+            },
             "sameAs": [
                 "https://www.linkedin.com/in/ivankharitonovich"
             ],
             "knowsAbout": [
+                "Game Engine Architecture",
+                "Graphics Programming",
+                "Multiplayer Systems",
                 "Unity3D",
+                "Unreal Engine",
                 "CryEngine",
                 "C++",
                 "C#",
                 "Computer Graphics",
                 "Game Networking"
+            ],
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "ITMO University"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Ivan Kharitonovich - Principal Engineer",
+            "description": "Expert game engine architect and graphics programmer with 15+ years of experience shipping AAA titles and products to millions of players globally.",
+            "url": "https://xarpen.github.io",
+            "image": "https://xarpen.github.io/assets/backgrounds/NewYork.jpg",
+            "priceRange": "$$$$",
+            "areaServed": {
+                "@type": "GeoShape",
+                "addressCountry": "International"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Project Portfolio - Ivan Kharitonovich",
+            "description": "Game development projects spanning Virtual Golf 3, Contract Wars, Russia 2028, and more",
+            "url": "https://xarpen.github.io",
+            "mainEntity": [
+                {
+                    "@type": "SoftwareApplication",
+                    "name": "Virtual Golf 3",
+                    "description": "Scalable virtual golf platform with 550+ courses at global scale",
+                    "image": [
+                        "https://xarpen.github.io/assets/backgrounds/VirtualGolf-3-A.jpg",
+                        "https://xarpen.github.io/assets/backgrounds/VirtualGolf-3-B.jpg",
+                        "https://xarpen.github.io/assets/backgrounds/VirtualGolf-3-C.jpg"
+                    ],
+                    "url": "https://xarpen.github.io/#project-perfect-golf"
+                },
+                {
+                    "@type": "SoftwareApplication",
+                    "name": "Perfect Golf",
+                    "description": "Cross-platform golf simulation shipped across PC, macOS, Linux, iOS, and Android",
+                    "image": [
+                        "https://xarpen.github.io/assets/backgrounds/Perfect-Golf-A.jpg",
+                        "https://xarpen.github.io/assets/backgrounds/Perfect-Golf-B.jpg",
+                        "https://xarpen.github.io/assets/backgrounds/Perfect-Golf-C.jpg"
+                    ],
+                    "url": "https://xarpen.github.io/#project-contract-wars"
+                },
+                {
+                    "@type": "SoftwareApplication",
+                    "name": "Contract Wars",
+                    "description": "Online FPS reaching 48M+ players worldwide with advanced multiplayer and rendering systems",
+                    "image": [
+                        "https://xarpen.github.io/assets/backgrounds/Contract-Wars-A.jpg",
+                        "https://xarpen.github.io/assets/backgrounds/Contract-Wars-B.jpg",
+                        "https://xarpen.github.io/assets/backgrounds/Contract-Wars-C.jpg"
+                    ],
+                    "url": "https://xarpen.github.io/#project-russia-2028"
+                },
+                {
+                    "@type": "SoftwareApplication",
+                    "name": "Russia 2028",
+                    "description": "Premier CryEngine demonstration featuring advanced rendering, shadowing, and post-processing",
+                    "image": [
+                        "https://xarpen.github.io/assets/backgrounds/Russia-2028-A.jpg",
+                        "https://xarpen.github.io/assets/backgrounds/Russia-2028-B.jpg",
+                        "https://xarpen.github.io/assets/backgrounds/Russia-2028-C.jpg"
+                    ],
+                    "url": "https://xarpen.github.io/#project-russia-2028"
+                }
             ]
         }
     </script>
 </head>
 <body>
+
+<a href="#main-content" class="skip-to-main">Skip to main content</a>
 
 <nav class="nav navbar navbar-expand navbar-dark py-0 top-contact-nav">
     <div class="container-fluid">
@@ -77,7 +209,8 @@
     </div>
 </div>
 
-<br>
+<main id="main-content">
+<h2 class="sr-only">Technical Skills</h2>
 <div id="resume" class="container text-center d-none d-lg-block mb-3" data-aos="fade-up">
     <div class="row">
         <exp-content image="Unity3D" heading="Unity 3D" years="15"></exp-content>
@@ -101,7 +234,8 @@
 
 <div data-aos="fade-up" class="mb-3">
     <icon-content image="verified-badge" heading="Experience" >
-        <p>
+        <h2 class="sr-only">Professional Experience</h2>
+        <p class="experience-timeline">
             <u><strong class="text-secondary">Present</strong> Principal Engineer at Trackman</u><br>
             <strong class="text-secondary">2022</strong> Technical Lead at Trackman<br>
             <strong class="text-secondary">2017</strong> Senior Programmer at Trackman<br>
@@ -116,42 +250,50 @@
 
 <div data-aos="fade-up" class="mb-3">
     <icon-content image="tools" heading="Technologies">
+        <h2 class="sr-only">Core Technologies & Tools</h2>
         <p>Unity3D, Unreal Engine, CryEngine, Rider, Visual Studio, Xcode, DirectX, OpenGL, Metal, PhysX, Git, Subversion, Azure Pipelines</p>
     </icon-content>
 </div>
 
 <div data-aos="fade-up" class="mb-3">
     <icon-content image="message-bot" heading="AI">
+        <h2 class="sr-only">AI & Workflow Tools</h2>
         <p>Codex, Anthropic Claude, Cursor, Midjourney, prompt engineering, AI-assisted coding, rapid prototyping, technical writing, and production workflow acceleration.</p>
     </icon-content>
 </div>
 
 <div data-aos="fade-up" class="mb-3">
     <icon-content image="home-office" heading="Platforms">
+        <h2 class="sr-only">Supported Platforms & Systems</h2>
         <p>Windows, macOS, Linux, Xbox One, PS4, iOS, Android</p>
     </icon-content>
 </div>
 
 <div data-aos="fade-up" class="mb-3">
     <icon-content image="code" heading="Languages" >
+        <h2 class="sr-only">Programming Languages & Shaders</h2>
         <p>C, C++, C#, Objective C, Assembler, HLSL, GLSL, CG</p>
-        <a class="hvr-grow-shadow p-1" href="assets/certs/Ivan%20Kharitonovich%20-%20Certificate%20Brainbench%20C++.pdf" type="pdf">
-            <img src="assets/certs/cppprogrammer.gif" alt="Brainbench C++ certification badge" loading="lazy">
-        </a>
-        <a class="hvr-grow-shadow" href="assets/certs/Ivan%20Kharitonovich%20-%20Certificate%20Brainbench%20C%23.pdf" type="pdf">
-            <img src="assets/certs/csharp.gif" alt="Brainbench C# certification badge" loading="lazy">
-        </a>
+        <div class="cert-badges">
+            <a class="hvr-grow-shadow" href="assets/certs/Ivan%20Kharitonovich%20-%20Certificate%20Brainbench%20C++.pdf" type="pdf">
+                <img src="assets/certs/cppprogrammer.gif" alt="Brainbench C++ certification badge" loading="lazy">
+            </a>
+            <a class="hvr-grow-shadow" href="assets/certs/Ivan%20Kharitonovich%20-%20Certificate%20Brainbench%20C%23.pdf" type="pdf">
+                <img src="assets/certs/csharp.gif" alt="Brainbench C# certification badge" loading="lazy">
+            </a>
+        </div>
     </icon-content>
 </div>
 
 <div data-aos="fade-up" class="mb-3">
     <icon-content image="education" heading="Education" >
+        <h2 class="sr-only">Education & Credentials</h2>
         <p>ITMO University, Saint Petersburg, Russia<br>Bachelor of Engineering and Technology, 2014</p>
     </icon-content>
 </div>
 
 <div data-aos="fade-up" class="mb-5 section-spacer-xl">
     <icon-content image="idea" heading="Concepts">
+        <h2 class="sr-only">Software Architecture & Design Concepts</h2>
         <p>OOP, UML, CI/CD, Design Patterns, Refactoring, Network, Threading, Obfuscation</p>
     </icon-content>
 </div>
@@ -168,17 +310,22 @@
                         video-min-height="12vw"
                         image-b="VirtualGolf-3-B"
                         image-c="VirtualGolf-3-C">
+                    <h2 class="sr-only">Project: Virtual Golf 3</h2>
                     <div slot="description">
                         <p>Architected the platform. Led the engineering team. Delivered a <u><strong>stable, scalable product to millions of users</strong></u>.</p>
-                        <p>At Trackman, I was the <u><strong>primary engineering force behind Virtual Golf 3</strong></u>. The programming foundation began with me: I established the architecture, built the core systems, defined the technical direction, and turned an ambitious product vision into a production-ready virtual golf platform.</p>
-                        <p>I led the engineering team through the full development lifecycle: breaking large problems into executable plans, making critical architectural decisions, reviewing key systems, removing blockers, controlling technical risk, and keeping delivery moving under real production pressure. I remained deeply hands-on throughout, <u><strong>writing critical code and solving the hardest technical problems</strong></u> across performance, stability, tooling, and system design.</p>
-                        <p>The platform was engineered for long-term scale and reliable delivery to a <u><strong>global audience reaching millions of users</strong></u>. I focused on modular architecture, predictable performance, production stability, and workflows that allowed the product to grow without the codebase becoming the limiting factor.</p>
-                        <p>My responsibility extended beyond the engineering team. I built systems, tools, and processes that <u><strong>enabled content teams to deliver new experiences faster</strong></u>, while supporting marketing with reliable builds, demonstrations, launch materials, and product-ready features.</p>
-                        <p>The result was not just a shipped game, but a <u><strong>scalable production platform connecting engineering, content, marketing, and business execution</strong></u>.</p>
+                        <details class="project-read-more" open>
+                            <summary>Read more</summary>
+                            <p>At Trackman, I was the <u><strong>primary engineering force behind Virtual Golf 3</strong></u>. The programming foundation began with me: I established the architecture, built the core systems, defined the technical direction, and turned an ambitious product vision into a production-ready virtual golf platform.</p>
+                            <p>I led the engineering team through the full development lifecycle: breaking large problems into executable plans, making critical architectural decisions, reviewing key systems, removing blockers, controlling technical risk, and keeping delivery moving under real production pressure. I remained deeply hands-on throughout, <u><strong>writing critical code and solving the hardest technical problems</strong></u> across performance, stability, tooling, and system design.</p>
+                            <p>The platform was engineered for long-term scale and reliable delivery to a <u><strong>global audience reaching millions of users</strong></u>. I focused on modular architecture, predictable performance, production stability, and workflows that allowed the product to grow without the codebase becoming the limiting factor.</p>
+                            <p>My responsibility extended beyond the engineering team. I built systems, tools, and processes that <u><strong>enabled content teams to deliver new experiences faster</strong></u>, while supporting marketing with reliable builds, demonstrations, launch materials, and product-ready features.</p>
+                            <p>The result was not just a shipped game, but a <u><strong>scalable production platform connecting engineering, content, marketing, and business execution</strong></u>.</p>
+                        </details>
                     </div>
                 </project-showcase>
 
                 <div id="aboutme" class="aboutme-section">
+                    <h2 class="sr-only">About Ivan Kharitonovich</h2>
                     <div data-aos="fade-right">
                         <icon-content image="avatar" heading="Ivan Kharitonovich" icon-size="247" icon-width="320" photo>
                             <p class="project-showcase-role aboutme-role">Principal Engineer</p>
@@ -208,13 +355,17 @@
                         video-min-height="12vw"
                         image-b="Perfect-Golf-B"
                         image-c="Perfect-Golf-C">
+                    <h2 class="sr-only">Project: Perfect Golf</h2>
                     <div slot="description">
                         <p><u><strong>Built the core game in six months.</strong></u> <u><strong>Shipped across PC, macOS, Linux, iOS, and Android.</strong></u></p>
-                        <p>I joined Perfect Golf to improve its course editor and turned it into a production tool used by professional golf-course designers. That work led to me taking technical ownership of the full game.</p>
-                        <p>I built the core systems across engine architecture, gameplay, networking, multiplayer, user interface, and development tools. The architecture was designed for portability from the start, allowing the game to run across Windows, macOS, and Linux, then move to iOS and Android with limited rework.</p>
-                        <p>As the project expanded, I grew and led the programming team while continuing to own the overall technical direction. We developed backend services, social features, realistic golf physics, improved UI, and the production systems required to support a complete commercial release.</p>
-                        <p>The project launched successfully through Steam Early Access and progressed to full release.</p>
-                        <p>The result was a complete cross-platform golf simulation built quickly, architected for scale, and delivered from internal tooling to final product under my technical leadership.</p>
+                        <details class="project-read-more" open>
+                            <summary>Read more</summary>
+                            <p>I joined Perfect Golf to improve its course editor and turned it into a production tool used by professional golf-course designers. That work led to me taking technical ownership of the full game.</p>
+                            <p>I built the core systems across engine architecture, gameplay, networking, multiplayer, user interface, and development tools. The architecture was designed for portability from the start, allowing the game to run across Windows, macOS, and Linux, then move to iOS and Android with limited rework.</p>
+                            <p>As the project expanded, I grew and led the programming team while continuing to own the overall technical direction. We developed backend services, social features, realistic golf physics, improved UI, and the production systems required to support a complete commercial release.</p>
+                            <p>The project launched successfully through Steam Early Access and progressed to full release.</p>
+                            <p>The result was a complete cross-platform golf simulation built quickly, architected for scale, and delivered from internal tooling to final product under my technical leadership.</p>
+                        </details>
                     </div>
                 </project-showcase>
 
@@ -230,12 +381,16 @@
                         video-min-height="12vw"
                         image-b="Contract-Wars-B"
                         image-c="Contract-Wars-C">
+                    <h2 class="sr-only">Project: Contract Wars</h2>
                     <div slot="description">
                         <p><u><strong>Built from scratch.</strong></u> <u><strong>Reached 2M+ subscribers in 18 months.</strong></u> <u><strong>Later credited with 48M+ players worldwide.</strong></u></p>
-                        <p>I created Contract Wars as a full-fledged online FPS, initially building the codebase alone and establishing the entire technical foundation: engine architecture, gameplay, multiplayer, networking, ballistics, shaders, animation, rendering, and development tools.</p>
-                        <p>As the game scaled, I expanded and led the engineering team across backend, database, UI, and gameplay while retaining ownership of the overall architecture and technical direction.</p>
-                        <p>The engine was designed to perform across a wide range of PC hardware. Optimized rendering, animation, decal, and bullet-physics systems supported matches with up to <u><strong>30 players</strong></u>, while an authoritative server architecture, client-side prediction, and network compensation kept gameplay responsive under high latency and packet loss.</p>
-                        <p>The result was a complete online FPS built from first principles, scaling from an independently created codebase to a global product later credited with reaching <u><strong>more than 48 million players</strong></u>.</p>
+                        <details class="project-read-more" open>
+                            <summary>Read more</summary>
+                            <p>I created Contract Wars as a full-fledged online FPS, initially building the codebase alone and establishing the entire technical foundation: engine architecture, gameplay, multiplayer, networking, ballistics, shaders, animation, rendering, and development tools.</p>
+                            <p>As the game scaled, I expanded and led the engineering team across backend, database, UI, and gameplay while retaining ownership of the overall architecture and technical direction.</p>
+                            <p>The engine was designed to perform across a wide range of PC hardware. Optimized rendering, animation, decal, and bullet-physics systems supported matches with up to <u><strong>30 players</strong></u>, while an authoritative server architecture, client-side prediction, and network compensation kept gameplay responsive under high latency and packet loss.</p>
+                            <p>The result was a complete online FPS built from first principles, scaling from an independently created codebase to a global product later credited with reaching <u><strong>more than 48 million players</strong></u>.</p>
+                        </details>
                     </div>
                 </project-showcase>
 
@@ -251,16 +406,22 @@
                         video-src="Russia2028"
                         image-b="Russia-2028-B"
                         image-c="Russia-2028-C">
+                    <h2 class="sr-only">Project: Russia 2028</h2>
                     <div slot="description">
                         <p><u><strong>Extended CryEngine with custom lighting, shadowing, post-processing, and surface-detail technology built for a dark post-apocalyptic world.</strong></u></p>
-                        <p>I developed advanced rendering systems for Russia 2028, including Parallax Decals, Normal Ambient Light, improved shadow cascades, point-light shadows, particle effects, and post-processing. The work went beyond visual tuning-I modified core rendering behavior to give the project a distinct atmosphere and stronger environmental depth.</p>
-                        <p>Working closely with the art director, I designed and implemented Normal Ambient Light, a custom shading technique created to preserve form and detail in large outdoor environments without breaking the game's heavily desaturated visual style.</p>
-                        <p>I also reworked shadow rendering and optimized the screen-space ambient occlusion pipeline, improving contrast, depth, and readability across dark scenes while maintaining real-time performance.</p>
-                        <p>One of the project's defining systems was Parallax Decals, which added physical depth to damaged walls, crumbling plaster, rubble, dust-covered surfaces, and dirty windows without relying on expensive geometry.</p>
-                        <p>The result was a major expansion of CryEngine's rendering capabilities, shaped specifically around the visual identity of the game rather than limited by the engine's default pipeline.</p>
+                        <details class="project-read-more" open>
+                            <summary>Read more</summary>
+                            <p>I developed advanced rendering systems for Russia 2028, including Parallax Decals, Normal Ambient Light, improved shadow cascades, point-light shadows, particle effects, and post-processing. The work went beyond visual tuning-I modified core rendering behavior to give the project a distinct atmosphere and stronger environmental depth.</p>
+                            <p>Working closely with the art director, I designed and implemented Normal Ambient Light, a custom shading technique created to preserve form and detail in large outdoor environments without breaking the game's heavily desaturated visual style.</p>
+                            <p>I also reworked shadow rendering and optimized the screen-space ambient occlusion pipeline, improving contrast, depth, and readability across dark scenes while maintaining real-time performance.</p>
+                            <p>One of the project's defining systems was Parallax Decals, which added physical depth to damaged walls, crumbling plaster, rubble, dust-covered surfaces, and dirty windows without relying on expensive geometry.</p>
+                            <p>The result was a major expansion of CryEngine's rendering capabilities, shaped specifically around the visual identity of the game rather than limited by the engine's default pipeline.</p>
+                        </details>
                     </div>
                 </project-showcase>
 
+
+</main>
 
 <div id="imagePopupModal" class="image-popup-modal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1" hidden>
     <div class="image-popup-backdrop" data-close-image-popup></div>
@@ -321,6 +482,24 @@
                 once: true
             });
         }
+
+        const readMoreBlocks = document.querySelectorAll("details.project-read-more");
+        const mobileQuery = window.matchMedia("(max-width: 768px)");
+
+        function syncReadMoreByViewport(isMobile) {
+            readMoreBlocks.forEach((block) => {
+                if (isMobile) {
+                    block.removeAttribute("open");
+                } else {
+                    block.setAttribute("open", "open");
+                }
+            });
+        }
+
+        syncReadMoreByViewport(mobileQuery.matches);
+        mobileQuery.addEventListener("change", (event) => {
+            syncReadMoreByViewport(event.matches);
+        });
     });
 </script>
 

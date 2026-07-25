@@ -31,6 +31,38 @@ body {
     }
 }
 
+.top-contact-nav .navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+    width: 100%;
+}
+
+.top-contact-nav .nav-item {
+    min-width: 0;
+}
+
+.top-contact-link {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.28rem 0.35rem !important;
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.top-contact-icon {
+    flex: 0 0 auto;
+}
+
+.top-contact-text {
+    display: inline-block;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
 .section-spacer-xl {
     margin-bottom: 5rem !important;
 }
@@ -258,7 +290,7 @@ exp-content {
 }
 
 .project-showcase-media-item {
-    display: block;
+    display: block !important;
     width: 100%;
     margin: 0;
     overflow: hidden;
@@ -280,12 +312,21 @@ exp-content {
     }
 }
 
-.project-showcase-video {
-    padding: 0 !important;
-    background-image: var(--project-video-preview);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: var(--ui-radius-md);
+/* Consistent, evenly spaced certification badges */
+.cert-badges {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.cert-badges a {
+    display: inline-flex;
+}
+
+.cert-badges img {
+    display: block;
 }
 
 .project-showcase-panel {
@@ -381,7 +422,9 @@ exp-content {
 .video-thumbnail {
     position: relative;
     cursor: pointer;
-    display: flex;
+    display: flex !important;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -535,3 +578,133 @@ footer p:last-child a {
 footer p:last-child a:hover {
     color: var(--ui-gold);
 }
+
+/* Enhanced mobile spacing for better whitespace */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .video-background-holder {
+        height: calc(60vh);
+    }
+
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
+
+/* Hide helper headings visually while keeping them accessible to screen readers */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.project-read-more {
+    margin-top: 0.15rem;
+}
+
+.project-read-more summary {
+    display: inline-block;
+    cursor: pointer;
+    color: #8edfff;
+    font-weight: 600;
+    margin-bottom: 0.85rem;
+}
+
+.project-read-more summary:hover {
+    color: #b8ebff;
+}
+
+@media (max-width: 768px) {
+    .top-contact-nav .container-fluid {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .top-contact-nav .nav-item {
+        width: 100%;
+    }
+
+    .top-contact-link {
+        width: 100%;
+    }
+
+    icon-content .pt-2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55rem;
+    }
+
+    icon-content .pt-2 .btn-resume {
+        margin-right: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .experience-timeline {
+        margin-bottom: 0;
+        line-height: 1.22;
+    }
+}
+
+.experience-timeline {
+    margin-bottom: 0;
+    line-height: 1.35;
+}
+
+@media (max-width: 768px) {
+    .experience-timeline {
+        line-height: 1.22;
+    }
+}
+
+@media (min-width: 769px) {
+    .project-read-more > summary {
+        display: none;
+    }
+}
+
+/* Touch devices: disable hover-driven motion and glow effects */
+@media (hover: none), (pointer: coarse) {
+    .hvr-grow,
+    .hvr-grow-shadow,
+    .hvr-bounce-to-right,
+    .btn-resume,
+    .video-thumbnail,
+    .video-thumbnail-play,
+    .project-showcase-media-item,
+    .experience-link-btn {
+        transition: none !important;
+    }
+
+    .hvr-grow:hover,
+    .hvr-grow:focus,
+    .hvr-grow:active,
+    .hvr-grow-shadow:hover,
+    .hvr-grow-shadow:focus,
+    .hvr-grow-shadow:active,
+    .btn-resume:hover,
+    .video-thumbnail:hover,
+    .video-thumbnail:hover .video-thumbnail-play,
+    .experience-link-btn:hover,
+    footer a:hover,
+    .project-read-more summary:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-resume:hover,
+    .project-read-more summary:hover,
+    footer a:hover {
+        border-bottom-color: transparent !important;
+    }
+}
+

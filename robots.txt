@@ -1,5 +1,19 @@
 User-agent: *
 Allow: /
+Disallow: /assets/certs/
+Disallow: *.pdf
 
 Sitemap: https://xarpen.github.io/sitemap.xml
 
+# Crawl delay for all bots
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Crawl-delay: 0
+Allow: /
+
+# Bing specific
+User-agent: Bingbot
+Crawl-delay: 1
+Allow: /
