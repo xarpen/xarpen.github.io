@@ -325,8 +325,57 @@ exp-content {
     display: inline-flex;
 }
 
+.cert-badge-pill {
+    align-items: center;
+    min-height: 42px;
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(10, 10, 10, 0.35);
+    color: rgba(255, 255, 255, 0.94);
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.cert-badge-pill:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.48);
+}
+
 .cert-badges img {
     display: block;
+}
+
+.cert-placard-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 0.35rem;
+}
+
+.cert-placard {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.48rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 210, 113, 0.7);
+    background: linear-gradient(135deg, rgba(21, 44, 84, 0.96), rgba(35, 73, 140, 0.92));
+    color: #ffe29a;
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    text-decoration: none;
+    box-shadow: 0 5px 16px rgba(16, 24, 40, 0.24);
+}
+
+.cert-placard:hover,
+.cert-placard:focus {
+    color: #fff7de;
+    border-color: rgba(255, 210, 113, 0.96);
+    box-shadow: 0 7px 18px rgba(19, 40, 78, 0.3);
 }
 
 .project-showcase-panel {

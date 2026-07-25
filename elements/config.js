@@ -1,5 +1,5 @@
 window.siteConfig = Object.freeze({
-    version: "v1.0.1",
+    version: "v1.0.10",
     paths: {
         icons24Prefix: "assets/icons/icons8-",
         icons64Prefix: "assets/icons/icons8-",

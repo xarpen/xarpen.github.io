@@ -8,9 +8,10 @@ class IconContent extends HTMLElement
         const heading = String(this.getAttribute('heading') || this.getAttribute('title') || 'Section').trim();
         const iconSize = String(this.getAttribute('icon-size') || '64').trim();
         const iconWidth = String(this.getAttribute('icon-width') || iconSize).trim();
+        const customIconSrc = String(this.getAttribute('icon-src') || '').trim();
         const photoMode = this.hasAttribute('photo');
         const icon64Prefix = paths.icons64Prefix || 'assets/icons/icons8-';
-        const iconSrc = `${icon64Prefix}${image}-64.png`;
+        const iconSrc = customIconSrc || `${icon64Prefix}${image}-64.png`;
         const iconAlt = photoMode
             ? `${heading} profile photo`
             : `${heading} section icon`;
