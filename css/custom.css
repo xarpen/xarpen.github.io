@@ -95,6 +95,12 @@ exp-content {
     vertical-align: top;
 }
 
+.exp-content-details {
+    font-size: 0.84rem;
+    line-height: 1.35;
+    color: rgba(20, 35, 60, 0.82);
+}
+
 .btn-resume {
     transition: transform 0.22s var(--ui-ease-smooth), border-color 0.22s var(--ui-ease-smooth), color 0.22s var(--ui-ease-smooth), box-shadow 0.22s var(--ui-ease-smooth);
     display: inline-block;
@@ -139,6 +145,16 @@ exp-content {
     width: 100%;
     overflow: hidden;
 }
+
+.video-background-holder::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.54) 0%, rgba(0, 0, 0, 0.42) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
 .video-background-holder video {
     position: absolute;
     top: 50%;
@@ -152,6 +168,52 @@ exp-content {
 .video-background-content {
     position: relative;
     z-index: 2;
+}
+
+.hero-copy-panel {
+    display: inline-block;
+    max-width: min(52rem, calc(100vw - 2rem));
+    padding: 0.85rem 1.25rem;
+    background: rgba(0, 0, 0, 0.46);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.video-background-content h1,
+.video-background-content h3,
+.hero-tagline,
+.hero-summary {
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.72);
+}
+
+.hero-tagline {
+    color: #ffffff !important;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.45;
+}
+
+.hero-summary {
+    color: rgba(255, 255, 255, 0.96) !important;
+    max-width: 46rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .hero-copy-panel {
+        display: block;
+        padding: 0.75rem 0.9rem;
+    }
+
+    .hero-tagline,
+    .hero-summary {
+        letter-spacing: 0.02em;
+    }
 }
 
 .project-showcase-section {
@@ -216,6 +278,61 @@ exp-content {
     border-radius: var(--ui-radius-sm) !important;
 }
 
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin: 0;
+}
+
+.timeline-entry {
+    display: grid;
+    grid-template-columns: 1.1rem 1fr;
+    column-gap: 0.95rem;
+    position: relative;
+}
+
+.timeline-entry:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 1.2rem;
+    bottom: -0.65rem;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(229, 186, 95, 0.88), rgba(142, 223, 255, 0.6));
+}
+
+.timeline-marker {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.3rem;
+    border-radius: 999px;
+    border: 2px solid rgba(229, 186, 95, 0.95);
+    background: radial-gradient(circle at 35% 35%, #fff8df 0%, #f2c665 40%, #d29b3c 100%);
+    box-shadow: 0 0 0 3px rgba(229, 186, 95, 0.18);
+}
+
+.timeline-content {
+    min-width: 0;
+}
+
+.timeline-role {
+    margin-bottom: 0.2rem;
+}
+
+.timeline-role:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-entry-current .timeline-marker {
+    box-shadow: 0 0 0 4px rgba(229, 186, 95, 0.3);
+    border-color: rgba(255, 214, 124, 0.98);
+}
+
+.experience-company-desc {
+    margin-bottom: 0;
+}
+
 /* Subtle overrides for Hover.css utilities used across the page */
 .hvr-grow {
     transition-duration: 0.22s !important;
@@ -271,6 +388,7 @@ exp-content {
 .project-showcase-description p:last-child {
     margin-bottom: 0;
 }
+
 
 .project-showcase-copy u {
     text-underline-offset: 0.14em;
@@ -709,6 +827,14 @@ footer p:last-child a:hover {
     line-height: 1.35;
 }
 
+.experience-company-desc {
+    font-size: 0.79rem;
+    color: rgba(30, 50, 80, 0.62);
+    font-style: italic;
+    display: inline-block;
+    margin-bottom: 0.1rem;
+}
+
 @media (max-width: 768px) {
     .experience-timeline {
         line-height: 1.22;
@@ -756,4 +882,3 @@ footer p:last-child a:hover {
         border-bottom-color: transparent !important;
     }
 }
-
