@@ -460,6 +460,7 @@
             <a href="#resume">Resume</a> • 
             <a href="#aboutme">About Me</a>
         </p>
+        <p class="mb-0 mt-2 small text-light-emphasis">Version <span id="site-version">v1.0.1</span></p>
     </div>
 </footer>
 
@@ -481,6 +482,12 @@
                 easing: "ease-out-cubic",
                 once: true
             });
+        }
+
+        const versionNode = document.getElementById("site-version");
+        const siteVersion = window.siteConfig && window.siteConfig.version;
+        if (versionNode && siteVersion) {
+            versionNode.textContent = siteVersion;
         }
 
         const readMoreBlocks = document.querySelectorAll("details.project-read-more");
