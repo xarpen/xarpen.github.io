@@ -770,9 +770,22 @@ footer p:last-child a:hover {
     padding: 0 !important;
     margin: -1px !important;
     overflow: hidden !important;
+    clip-path: inset(50%) !important;
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
+}
+
+.sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: inherit !important;
+    margin: inherit !important;
+    overflow: visible !important;
+    clip-path: none !important;
+    clip: auto !important;
+    white-space: normal !important;
 }
 
 .project-read-more {

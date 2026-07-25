@@ -43,10 +43,10 @@ class ProjectShowcase extends HTMLElement {
                                      style="width: 100%; aspect-ratio: 16 / 9; background-image: url('${backgroundsPrefix}${videoPreview}.${videoPreviewExt}'); background-repeat: no-repeat; background-size: cover; background-origin: content-box; background-clip: content-box;">
                                     <div class="video-thumbnail-play"></div>
                                 </div>
-                                <a class="project-showcase-media-item hvr-grow-shadow" href="${backgroundsPrefix}${imageB}.${imageBExt}" target="_blank">
+                                <a class="project-showcase-media-item hvr-grow-shadow" href="${backgroundsPrefix}${imageB}.${imageBExt}" target="_blank" rel="noopener noreferrer">
                                     <img class="project-showcase-media-image" src="${backgroundsPrefix}${imageB}.${imageBExt}" alt="${title} gameplay screenshot, secondary view" loading="lazy" decoding="async" width="800" height="450"/>
                                 </a>
-                                <a class="project-showcase-media-item hvr-grow-shadow" href="${backgroundsPrefix}${imageC}.${imageCExt}" target="_blank">
+                                <a class="project-showcase-media-item hvr-grow-shadow" href="${backgroundsPrefix}${imageC}.${imageCExt}" target="_blank" rel="noopener noreferrer">
                                     <img class="project-showcase-media-image" src="${backgroundsPrefix}${imageC}.${imageCExt}" alt="${title} gameplay screenshot, tertiary view" loading="lazy" decoding="async" width="800" height="450"/>
                                 </a>
                             </div>
