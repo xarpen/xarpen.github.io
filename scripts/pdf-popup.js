@@ -131,6 +131,10 @@
                 return;
             }
 
+            if (link.hasAttribute("download")) {
+                return;
+            }
+
             const href = link.getAttribute("href") || "";
             if (!isPdfHref(href)) {
                 return;
